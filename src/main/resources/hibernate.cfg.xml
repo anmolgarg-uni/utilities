@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/uniware</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">uniware</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.generate_statistics">true</property>
+
+        <mapping class="com.unicommerce.utilities.entity.AccessResourceGroup" />
+        <mapping class="com.unicommerce.utilities.entity.AccessResource" />
+        <mapping class="com.unicommerce.utilities.entity.AccessPattern" />
+        <mapping class="com.unicommerce.utilities.entity.ProductAccessResource" />
+        <mapping class="com.unicommerce.utilities.entity.Tenant" />
+        <mapping class="com.unicommerce.utilities.entity.Feature" />
+        <mapping class="com.unicommerce.utilities.entity.ProductFeature" />
+        <mapping class="com.unicommerce.utilities.entity.TenantSource" />
+        <mapping class="com.unicommerce.utilities.entity.TenantSetupState" />
+        <mapping class="com.unicommerce.utilities.entity.Product" />
+
+    </session-factory>
+</hibernate-configuration>
