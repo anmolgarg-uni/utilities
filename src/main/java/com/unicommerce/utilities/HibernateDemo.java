@@ -54,17 +54,7 @@ public class HibernateDemo {
 
 
 
-    public static void annotatedTransaction() {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("com.unicommerce");
-        context.refresh();
 
-        TenantService tenantService = context.getBean(TenantService.class);
-        Tenant tenant = tenantService.getTenant(2);
-
-        System.out.println(tenant);
-
-    }
 
 
     private static Feature createFeature() {
